@@ -1,0 +1,425 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif,Arial Helvetica, ;
+}
+head , body {
+    height:100%;
+    width:100%;
+}
+body{
+    background-color:rgba(0, 0, 0, 0.943);
+    /* overflow-x:hidden; */
+}
+body::-webkit-scrollbar {
+    display:none;
+ /* -ms-oveflow-style:none; */
+/* overflow-x:hidden; */
+}
+
+
+.hero {
+    height:90vh;
+    width:100vw;
+    background-image:url("/logo.png");
+    background-size:max(1190px, 100vw);
+    /* background-repeat:no-repeat; */
+    opacity:1;
+    position:relative;
+}
+.upper {
+    height:90vh;
+    width:100vw;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.413));
+    position:relative;
+    z-index:100;
+    opacity:1;
+    
+}
+.right {
+    display:inline-block;
+    position:absolute;
+    top:40vh;
+    right:1%;
+    color:white;
+    font-size:1.5rem;
+}
+.left {
+    display:inline-block;
+    position:absolute;
+    top:40vh;
+    left:1%;
+    color:white;
+    font-size:1.5rem;
+}
+.header {
+    position:absolute;
+    top:5px;
+    height:10vh;
+    width:85%;
+    background-color:transparent;
+    margin-left:7vw;
+    padding-top:2vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.logo {
+    height:80%;
+    width:190px;
+    background-image:url("/netflix.png");
+    background-size:cover;
+    background-position:center center;
+    color:red;
+    
+}
+.signin {
+    height:80%;
+    width:250px;
+    background-color:transparent;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.signin select {
+    height:32px;
+    width:125px;
+    border:2px solid Grey;
+    border-radius:5px;
+    font-size:1.1rem;
+    background-color:black;
+    color:white;
+}
+.signin button {
+    height:32px;
+    width:76px;
+    color:white;
+    background-color:red;
+    border-radius:5px;
+    font-weight:600;
+    font-size:.9rem;
+    border:none;
+}
+.curve {
+   
+    height:10vh;
+    width:100vw;
+     border-top:3px solid rgb(255, 0, 81);
+    border-top-right-radius:50% ;
+    border-top-left-radius:50% ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:1vw;
+    position:relative;
+    /* border-bottom:0.1px solid rgba(255, 0, 81, 0.7); */
+  
+}
+.curve div {
+    height:.7vh;
+    width:8vw;
+    background-color:rgb(187, 185, 185);
+    border-radius:2vw;
+    cursor:pointer;
+}
+
+.curve span i {
+    color:white;
+}
+.words {
+    height:75%;
+    width:93%;
+    background-color:transparent;
+    position:absolute;
+    top:15%;
+    margin-left:7vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    gap:3vh;
+}
+.words> div:nth-child(1) {      /* -n+1 */
+    height:210px;
+    width:508px;
+    background-color:transparent;
+}
+.words> div:nth-child(2) {            /* -n+2 */
+    height:20px;
+    width:508px;
+    background-color:transparent;
+}
+.words div:nth-child(3) {
+    height:25px;
+    width:508px;
+    background-color:transparent;
+}
+.words div:nth-child(4) {
+    height:75px;
+    width:515px;
+    background-color:transparent;
+    display:flex;
+    column-gap:9px;
+   padding-left:2px;
+    padding-top:1%;
+}
+.words h1 {
+    font-family:sans-serif;
+    color:#FFFFFF;
+    font-size:3.2rem;
+ font-weight:900;
+}
+.words h2 {
+    font-family:sans-serif;
+    color:white;
+    font-size:1.25rem;
+ font-weight:500;
+}
+.words h3 {
+    font-family:sans-serif;
+    color:white;
+    font-size:1rem;
+ font-weight:300;
+}
+
+.mail input {
+    height:56px;
+    width:328px;
+    background-color:rgba(0, 0, 0, 0.68);
+  
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding-left:4%;
+    border:1px solid white;
+    border-radius:5px;
+    font-size:1.3rem;
+     color:white;
+
+}
+/* .start {
+    display:flex;
+} */
+.start button {
+    height:56px;
+    width:172px;
+    font-size:1.3rem;
+    color:white;
+    background-color:rgb(229, 9, 20);
+    border:none;
+    border-radius:5px;
+    /* font-weight:650; */
+}
+.start i {
+    position:relative;
+    left:5px;
+}
+
+
+.join {
+    height:400px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+   }
+     .more {
+        height:30px;
+        width:80%;
+        color:#FFFFFF;
+        font-size:1.5rem;
+        font-family:sans-serif;
+     }
+     .box {
+        height:330px;
+        width:80%;
+        display:flex;
+        flex-wrap:wrap;
+        column-gap:10px;
+     }
+     .box div {
+        height:320px;
+        width:23%;
+        border:1px solid white;
+        border-radius:20px;
+      background-image:linear-gradient(rgba(0, 0, 255, 0.35),rgba(128, 0, 128, 0.351));
+      color:white;
+      padding-top:20px;
+      padding-left:20px;
+      position:relative;
+     }
+      .box div h3 {
+        font-size:1.6rem;
+      }
+      .box div p {
+        font-size:1.099rem;
+        
+      }
+
+     .box div img {
+      position:absolute;
+      right:20px;
+      bottom:20px;
+     }
+    .question_section {
+        height:650px;
+        width:100%;
+        position:relative;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        row-gap:10px;
+        /* padding-top:20px; */
+        padding-left:140px;
+    }
+
+    .questions {
+        /* margin-right:235px; */
+        height:75px;
+        width:65%;
+        background-color:rgba(128, 128, 128, 0.416); 
+        border-radius:2px;
+        font-size:1.5rem;
+        color:white;
+        position:relative;
+        padding-top:23px;
+        padding-left:15px;
+    }
+        .questions i {
+            cursor:pointer;
+        }
+
+
+  .FAQ {
+        background-color:transparent;
+    }
+     .questions i {
+        position:absolute;
+        right:10px;
+
+     }
+
+
+     .mail_section {
+        padding-left:140px;
+        height:120px;
+        width:80%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        row-gap:10px;
+     }
+
+     .ready {
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:25px;
+        width:100%;
+        font-size:1rem;
+        color:white;
+     }
+     /* .ready h3 {
+        text-align:start;
+     } */
+     .maildown {
+        height:75px;
+        width:100%;
+        display:flex;
+        column-gap:5px;
+      }
+     .email {
+        height:56px;
+        width:80%;
+     }
+     .email input {
+        padding-left:3%;
+        height:56px;
+        width:100%;
+        background-color:black;
+        color:white;
+        font-size:1rem;
+        border:1px solid white;
+        border-radius:5px;
+     }
+     .butStart {
+        height:56px;
+        width:202px;
+        background-color:red;
+        color:white;
+        font-size:1.2rem;
+        border-radius:5px;
+        border:none;
+        border-radius:5px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+     }
+     .butStart button {
+        background-color:red;
+        color:white;
+        font-size:1.2rem;
+        border:none; 
+     }
+
+
+     footer {
+        margin-top:50px;
+        height:fit-content;
+        width:100%;
+        padding-left:140px;
+        color:#FFFFFFB3;
+     }
+
+     .contact {
+        height:25px;
+        width:100%;
+       
+        font-size:1rem;
+        margin-bottom:20px;
+     }
+
+     .doubts {
+        height:200px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        column-gap:10px;
+        flex-wrap:wrap;
+       
+     }
+            a {
+        display:inline-block;
+        color:#FFFFFFB3;
+        font-size:1rem;
+     }
+     button {
+        cursor:pointer;
+     }
+     .doubts div {
+        height:150px;
+        width:23%;
+        border:none;
+        background:transparent;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        row-gap:10px;
+     }
+     .last {
+        height:180px;
+        width:100%;
+        align-items:flex-start;
+        flex-direction:column;
+     }
+    
+
+
+     /*   Again Finally I am done with this 😭😭😭😭  🫡🫡🫡🫡
+          It's 24th March midnight:- 2:11 👻👻👻
+          I'm thinking to add some new features And we'll see that      
+     */
